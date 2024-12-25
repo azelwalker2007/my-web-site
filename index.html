@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Waste Management Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--top navigation bar-->
+  <div class="nav">
+    <ul class="nav-links">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!-- Sidebar Section -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#interactive">Interactive Map</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">About the Author</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1 class="logo">E-Waste Management</h1>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <h2>Responsible E-Waste Management</h2>
+        <p>Join the movement to protect the environment by managing electronic waste responsibly.</p>
+        <button id="learn-more-btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p>Learn about the process of e-waste recycling and how you can contribute to a cleaner planet.</p>
+        <div class="steps">
+          <div class="step">
+            <h3>Step 1: Collection</h3>
+            <p>We collect old electronics from households and businesses.</p>
+          </div>
+          <div class="step">
+            <h3>Step 2: Sorting</h3>
+            <p>We sort e-waste into categories based on material and type.</p>
+          </div>
+          <div class="step">
+            <h3>Step 3: Recycling</h3>
+            <p>Electronics are recycled to recover valuable materials and reduce landfill waste.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+      <div class="container">
+        <h2>Why Manage E-Waste?</h2>
+        <ul>
+          <li><strong>Environmental Protection:</strong> Reduces hazardous waste and pollution.</li>
+          <li><strong>Resource Recovery:</strong> Recovers valuable materials such as metals, plastics, and glass.</li>
+          <li><strong>Energy Efficiency:</strong> Recycling e-waste uses less energy than producing new products.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive">
+      <div class="container">
+        <h2>Interactive Map</h2>
+        <p>Click on the areas to see where we have e-waste recycling centers.</p>
+        <div id="map-container">
+          <button class="map-btn" onclick="showLocationInfo('Location A')">Location A</button>
+          <button class="map-btn" onclick="showLocationInfo('Location B')">Location B</button>
+        </div>
+        <div id="location-info"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" id="submit-btn">Send Message</button>
+    </form>
+    <p id="response-message" class="hidden"></p> <!-- To show response message -->
+  </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer id="contact">
+      <div class="container">
+        <p>&copy; 2024 E-Waste Management Project</p>
+        <p>Contact us: <a href="mailto:contact@ewaste.org">contact@ewaste.org</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
